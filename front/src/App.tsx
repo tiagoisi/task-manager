@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { TaskListPage } from './pages/TaskListPage';
 import { TaskDetailPage } from './pages/TaskDetailPage';
-import { Layout } from './components/Layout';
+import { Layout } from './components/Layout/Layout';
 
 export default function App() {
   return (
