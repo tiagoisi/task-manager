@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import type { Task } from '../types';
+import type { Task } from '../../types';
 import s from './TaskCard.module.css';
 
 const STATUS_LABEL: Record<string, string> = {
