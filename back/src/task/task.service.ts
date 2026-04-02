@@ -212,10 +212,7 @@ export class TasksService {
     };
   }
 
-  /**
-   * Evita ciclos al asignar un padre a la tarea.
-  */
-  
+  // Evita ciclos al asignar un padre a la tarea.  
   private async ensureNoCircularReference(
     proposedParentId: string,
     taskId: string | null,
@@ -244,9 +241,8 @@ export class TasksService {
     }
   }
 
-  /**
-   * Suma los estimados de la tarea y sus subtareas.
-   */
+  
+  // Sumar estimados de la tarea y sus subtareas.
   computeTreeEstimate(task: Task): number {
     const self = Number(task.estimate) || 0;
     if (!task.subtasks || task.subtasks.length === 0) return self;
@@ -257,9 +253,7 @@ export class TasksService {
     return self + subtotalEstimate;
   }
 
-  /**
-   * Cuenta tareas por estado.
-   */
+  // Contar tareas por estado.
   countByStatus(
     task: Task,
   ): { todo: number; inProgress: number; done: number } {
