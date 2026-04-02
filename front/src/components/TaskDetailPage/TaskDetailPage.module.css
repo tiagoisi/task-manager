@@ -1,0 +1,39 @@
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+.heading { font-size: 24px; font-weight: 600; letter-spacing: -0.04em; }
+.controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.searchWrap { position: relative; }
+.search {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text);
+  font-size: 14px; padding: 8px 12px; width: 220px;
+  outline: none; transition: border-color var(--transition);
+}
+
+.search:focus { border-color: var(--accent); }
+.select {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text);
+  font-size: 14px; padding: 8px 12px;
+  outline: none; cursor: pointer; appearance: none;
+}
+
+.btn {
+  background: var(--accent); color: #fff;
+  border: none; border-radius: var(--radius-sm);
+  padding: 9px 16px; font-size: 14px; font-weight: 500;
+  cursor: pointer; white-space: nowrap;
+  transition: opacity var(--transition);
+}
+
+.btn:hover { opacity: 0.85; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.empty { text-align: center; padding: 64px 0; color: var(--text3); font-size: 15px; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 24px; }
+.pageBtn {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text2);
+  padding: 7px 14px; font-size: 13px; cursor: pointer;
+}
+
+.pageBtn:disabled { opacity: 0.4; cursor: default; }
+.pageInfo { font-size: 13px; color: var(--text2); }
