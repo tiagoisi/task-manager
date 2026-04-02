@@ -17,16 +17,19 @@ export const api = {
     if (!res.ok) throw new Error('Failed to fetch tasks');
     return res.json();
   },
+
   getTask: async (id: string): Promise<Task> => {
     const res = await fetch(`${BASE}/${id}`);
     if (!res.ok) throw new Error('Task not found');
     return res.json();
   },
+
   getStats: async (): Promise<TaskStats> => {
     const res = await fetch(`${BASE}/stats`);
     if (!res.ok) throw new Error('Failed to fetch stats');
     return res.json();
   },
+
   createTask: async (data: Partial<Task>): Promise<Task> => {
     const res = await fetch(BASE, {
       method: 'POST',
@@ -36,6 +39,7 @@ export const api = {
     if (!res.ok) throw new Error('Failed to create task');
     return res.json();
   },
+
   updateTask: async (id: string, data: Partial<Task>): Promise<Task> => {
     const res = await fetch(`${BASE}/${id}`, {
       method: 'PATCH',
@@ -45,6 +49,7 @@ export const api = {
     if (!res.ok) throw new Error('Failed to update task');
     return res.json();
   },
+
   deleteTask: async (id: string): Promise<void> => {
     const res = await fetch(`${BASE}/${id}`, { method: 'DELETE' });
     if (!res.ok) throw new Error('Failed to delete task');

@@ -1,39 +1,192 @@
-.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
-.heading { font-size: 24px; font-weight: 600; letter-spacing: -0.04em; }
-.controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.searchWrap { position: relative; }
-.search {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); color: var(--text);
-  font-size: 14px; padding: 8px 12px; width: 220px;
-  outline: none; transition: border-color var(--transition);
+.empty {
+  color: var(--text3);
+  padding: 32px;
 }
 
-.search:focus { border-color: var(--accent); }
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--text3);
+}
+
+.link {
+  color: var(--accent2);
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.priorityDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: var(--text2);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.metaRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .select {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); color: var(--text);
-  font-size: 14px; padding: 8px 12px;
-  outline: none; cursor: pointer; appearance: none;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.priorityText {
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.estimate {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text2);
+}
+
+.created {
+  font-size: 12px;
+  color: var(--text3);
+  margin-left: auto;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
 }
 
 .btn {
-  background: var(--accent); color: #fff;
-  border: none; border-radius: var(--radius-sm);
-  padding: 9px 16px; font-size: 14px; font-weight: 500;
-  cursor: pointer; white-space: nowrap;
-  transition: opacity var(--transition);
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 7px 14px;
+  cursor: pointer;
 }
 
-.btn:hover { opacity: 0.85; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
-.empty { text-align: center; padding: 64px 0; color: var(--text3); font-size: 15px; }
-.pagination { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 24px; }
-.pageBtn {
-  background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); color: var(--text2);
-  padding: 7px 14px; font-size: 13px; cursor: pointer;
+.btnEdit {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
-.pageBtn:disabled { opacity: 0.4; cursor: default; }
-.pageInfo { font-size: 13px; color: var(--text2); }
+.btnPrimary {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+}
+
+.btnDelete {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--urgent);
+  margin-left: auto;
+}
+
+/* Subtasks */
+
+.subtasksTitle {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  color: var(--text2);
+}
+
+.subtaskWrapper {
+  margin-top: 8px;
+}
+
+.subtaskInner {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.subtaskContent {
+  flex: 1;
+}
+
+.subtaskHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.subtaskDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.subtaskTitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.subtaskDesc {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+
+.subtaskMeta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subtaskActions {
+  display: flex;
+  gap: 6px;
+}
+
+.subtaskBtn {
+  background: var(--surface);
+  border: none;
+  border-radius: 6px;
+  color: var(--text2);
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.subtaskDelete {
+  color: var(--urgent);
+}
