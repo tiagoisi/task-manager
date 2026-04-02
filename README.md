@@ -135,9 +135,3 @@ Tests cover the service layer: task creation, updates, deletion, stats calculati
 | `limit` | `number` | Items per page (default: 20) |
 | `sortBy` | `string` | Field to sort by |
 | `sortOrder` | `ASC` \| `DESC` | Sort direction |
-
----
-
-## AI Usage
-
-This project was developed with the assistance of Claude (Anthropic) as a coding agent. The repository includes a `CLAUDE.md` file with the project configuration used during development.
