@@ -135,3 +135,14 @@ Tests cover the service layer: task creation, updates, deletion, stats calculati
 | `limit` | `number` | Items per page (default: 20) |
 | `sortBy` | `string` | Field to sort by |
 | `sortOrder` | `ASC` \| `DESC` | Sort direction |
+
+---
+
+## AI-assisted development notes
+
+Tools used: ChatGPT & Claude
+
+- Designed task hierarchy and estimation logic with AI guidance
+- Validated recursive subtask calculations
+- Accelerated initial development with AI, then refined and validated all logic manually
+- All generated code was reviewed and adapted before final implementation
