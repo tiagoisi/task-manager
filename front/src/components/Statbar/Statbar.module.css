@@ -4,6 +4,7 @@
   gap: 12px;
   margin-bottom: 32px;
 }
+
 .card {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -13,6 +14,7 @@
   flex-direction: column;
   gap: 4px;
 }
+
 .label { font-size: 12px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.06em; }
 .value { font-size: 28px; font-weight: 600; letter-spacing: -0.04em; }
 .sub { font-size: 12px; color: var(--text2); }

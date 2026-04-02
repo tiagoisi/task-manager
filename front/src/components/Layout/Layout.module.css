@@ -3,6 +3,7 @@
   grid-template-rows: 56px 1fr;
   min-height: 100vh;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -14,6 +15,7 @@
   top: 0;
   z-index: 100;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -23,6 +25,7 @@
   letter-spacing: -0.02em;
   color: var(--text);
 }
+
 .logoIcon {
   width: 28px;
   height: 28px;
@@ -33,4 +36,5 @@
   justify-content: center;
   font-size: 14px;
 }
+
 .main { padding: 32px 24px; max-width: 1200px; margin: 0 auto; width: 100%; }

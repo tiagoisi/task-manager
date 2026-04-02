@@ -1,6 +1,6 @@
 import type { Task, TaskStats, PaginatedTasks, TaskQuery } from '../types';
 
-const BASE = '/api/tasks';
+const BASE = `${import.meta.env.VITE_API_URL || 'http://localhost:3000'}/api/tasks`;
 
 const q = (params: Record<string, any>) => {
   const p = new URLSearchParams();
